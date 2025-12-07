@@ -1,3 +1,5 @@
-fn main() -> shadow_rs::SdResult<()> {
-  shadow_rs::new()
+use eyre::Result;
+fn main() -> Result<()> {
+    shadow_rs::ShadowBuilder::builder().build()?;
+    Ok(())
 }
